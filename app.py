@@ -26,6 +26,20 @@ with st.sidebar:
     if api_key:
         os.environ["GOOGLE_API_KEY"] = api_key
 
+    st.markdown(
+        """
+        To use this application, you'll need to set up your API keys:
+        
+        1. **Google Gemini API**:
+           - Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+           - Create a new API key
+           - Paste the API key in the input box above
+        
+        2. **DuckDuckGo API**:
+           - No API key needed! 🎉
+        """
+    )
+
 st.title("📹🤖 Video Analysis AI Agent")
 
 
